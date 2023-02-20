@@ -12,3 +12,12 @@ jobs:
     steps:
       - name: check Xcode version
         run: /usr/bin/xcodebuild -version
+
+      - name: checkout repository
+        uses: actions/checkout@v2
+
+      - name: build archive
+        run: |
+           xcodebuild build -scheme "I am Groot" -sdk iphoneos 
+           -destination generic/platform=iOS
+
