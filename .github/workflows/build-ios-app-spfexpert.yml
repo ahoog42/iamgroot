@@ -49,6 +49,6 @@ jobs:
       # Developer id: XW66E6M5N4
       - name: build archive
         run: |
-           xcodebuild -scheme "I am Groot" clean archive -archivePath "Actions" -sdk iphoneos \
+           xcodebuild -scheme "I am Groot" clean archive -archivePath "$RUNNER_TEMP/archive" -sdk iphoneos \
            -destination generic/platform=iOS
-
+           ls -lR $RUNNER_TEMP
