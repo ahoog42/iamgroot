@@ -1,6 +1,5 @@
 name: "Build iOS app"
 
-
 on:
   workflow_dispatch:
     branches: [main]
@@ -68,6 +67,6 @@ jobs:
         uses: actions/upload-artifactv3
         with:
           name: app
-          path: ${{RUNNER_TEMP}}/build/*.ipa"
+          path: ${{ runner.temp }}/build/*.ipa"
           retention-days: 3  
 
