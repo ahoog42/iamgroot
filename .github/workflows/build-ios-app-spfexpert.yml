@@ -61,5 +61,6 @@ jobs:
 
       - name: export ipa
         run: |
-          xcodebuild -exportArchive -archivePath $RUNNER_TEMP/archive -exportOptionsPlist $EXPORT_OPTS_PATH -exportPath $RUNNER_TEMP/export
+          echo -n "archive path is $RUNNER_TEMP/archive"
+          xcodebuild -exportArchive -archivePath $RUNNER_TEMP/archive -exportOptionsPlist $EXPORT_OPTS_PATH -exportPath $RUNNER_TEMP/archive
           ls -lR $RUNNER_TEMP/archive
