@@ -64,11 +64,11 @@ jobs:
           xcodebuild -exportArchive -archivePath $RUNNER_TEMP/iamgroot.xcarchive -exportOptionsPlist $EXPORT_OPTS_PATH -exportPath $RUNNER_TEMP/build
 
       - name: save app artifact
-        uses: actions/upload-artifactv2
+        uses: actions/upload-artifactv3
         with:
           name: app
           # can't figure out variables or contexts here yet
           # path: ${{ runner.temp }}/build/*.ipa"
-          path: /Users/runner/work/_temp/build/
+          path: /Users/runner/work/_temp/ExportOptions.plist
           retention-days: 3  
 
