@@ -67,8 +67,6 @@ jobs:
         uses: actions/upload-artifactv3
         with:
           name: app
-          # can't figure out variables or contexts here yet
-          # path: ${{ runner.temp }}/build/*.ipa"
           path: /Users/runner/work/_temp/ExportOptions.plist
           retention-days: 3  
 
