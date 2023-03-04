@@ -68,6 +68,6 @@ jobs:
         uses: actions/upload-artifactv3
         with:
           name: app
-          path: "$RUNNER_TEMP/build/*.ipa"
+          path: ${{RUNNER_TEMP}}/build/*.ipa"
           retention-days: 3  
 
