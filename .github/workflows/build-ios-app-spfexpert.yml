@@ -67,5 +67,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: app
-          path: /Users/runner/work/_temp/build/ 
+          path: $RUNNER_TEMP/build/ 
           retention-days: 3
