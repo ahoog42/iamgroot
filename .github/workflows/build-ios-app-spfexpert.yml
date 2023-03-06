@@ -44,8 +44,6 @@ jobs:
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           cp $PP_PATH ~/Library/MobileDevice/Provisioning\ Profiles
 
-
-      # Developer id: XW66E6M5N4
       - name: build archive
         run: |
           xcodebuild -scheme "I am Groot" \
