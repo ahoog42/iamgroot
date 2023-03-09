@@ -3,6 +3,7 @@ name: "Build iOS app"
 on:
   # manual trigger but change to any supported event
   # see addl: https://www.andrewhoog.com/post/how-to-build-react-native-android-app-with-github-actions/#3-run-build-workflow
+  # addl comment
   workflow_dispatch:
     branches: [main]
 
